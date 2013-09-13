@@ -4,7 +4,7 @@
 
     $ node test/samples/pipe.js | bin/tap-prettify.js -
 
-  Should output:
+  Should succeed with output:
 
     ✓ this thing is cool
     1/1 tests passed, none skipped.

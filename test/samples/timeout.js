@@ -4,7 +4,7 @@
 
     $ bin/tap-prettify.js --timeout=0.1 test/samples/timeout.js
 
-  Should output:
+  Should fail with output:
 
     TIMEOUT test/samples/timeout.js
 */

@@ -4,7 +4,7 @@
 
     $ bin/tap-prettify.js test/samples/skip.js
 
-  Should output:
+  Should succeed with output:
 
     ✓ this thing is cool
     S this thing will be skipped

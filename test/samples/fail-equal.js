@@ -4,7 +4,7 @@
 
     $ bin/tap-prettify.js test/samples/fail-equal.js
 
-  Should output:
+  Should fail with output:
 
     ✓ this thing is ok
     x this thing will fail

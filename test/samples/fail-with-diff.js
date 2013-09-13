@@ -4,7 +4,7 @@
 
     $ bin/tap-prettify.js test/samples/fail-with-diff.js
 
-  Should output:
+  Should fail with output:
 
     x this thing will fail
 
