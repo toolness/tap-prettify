@@ -1,0 +1,36 @@
+{
+  "name": "tap-prettify",
+  "version": "0.0.1",
+  "description": "Make tap output nicely readable.",
+  "main": "index.js",
+  "author": {
+    "name": "Atul Varma",
+    "email": "varmaa@gmail.com",
+    "url": "http://toolness.com"
+  },
+  "bin": {
+    "tap-prettify": "bin/tap-prettify.js"
+  },
+  "dependencies": {
+    "colors": "0.6.2",
+    "nopt": "2.1.2",
+    "tap": "0.4.4"
+  },
+  "devDependencies": {
+    "split": "0.2.10"
+  },
+  "scripts": {
+    "test": "node bin/tap-prettify.js test/*.js"
+  },
+  "keywords": [
+    "tap"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/toolness/tap-prettify/raw/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/toolness/tap-prettify.git"
+  }
+}
