@@ -17,7 +17,8 @@
     "tap": "0.4.4"
   },
   "devDependencies": {
-    "split": "0.2.10"
+    "split": "0.2.10",
+    "through": "2.3.4"
   },
   "scripts": {
     "test": "node bin/tap-prettify.js test/*.js"

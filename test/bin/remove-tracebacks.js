@@ -1,18 +1,28 @@
 var split = require('split');
-var inTraceback = false;
+var through = require('through');
 
-process.stdin
-  .pipe(split())
-  .on('data', function(line) {
+function removeTracebacks() {
+  var inTraceback = false;
+
+  return through(function write(line) {
     if (inTraceback) {
       if (line == "") {
-        process.stdout.write("    ...\n\n");
+        this.queue("    ...\n\n");
         inTraceback = false;
       }
     } else {
-      process.stdout.write(line + "\n");
+      this.queue(line + "\n");
     }
 
     if (line == "  Traceback (most recent call first):")
       inTraceback = true;
   });
+}
+
+module.exports = removeTracebacks;
+
+if (!module.parent)
+  process.stdin
+    .pipe(split())
+    .pipe(removeTracebacks())
+    .pipe(process.stdout);
