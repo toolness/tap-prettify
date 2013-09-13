@@ -73,7 +73,7 @@ Options:
     --stderr    Print standard error output of tests to standard error.
     --gc        Expose the garbage collector to tests.
     --timeout   Maximum time to wait for a subtest, in seconds. Default: 30
-    --version   Print the version of node tap.
+    --version   Print the version of node tap-prettify.
     --help      Print this help.
 
 */}.toString().split(/\n/).slice(1, -1).join("\n"))
