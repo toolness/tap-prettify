@@ -1,5 +1,7 @@
 This makes node [Test Anything Protocol][tap] test runner output
-nicely readable.
+nicely readable, like so:
+
+![Screenshot](http://labs.toolness.com/tap-prettify.png)
 
 To use it, simply `npm install tap-prettify` and then use the
 `tap-prettify` executable instead of `tap` to run your tests.
