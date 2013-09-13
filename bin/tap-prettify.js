@@ -3,8 +3,9 @@
 var argv = process.argv.slice(2)
   , prettifyTapOutput = require("../")
   , path = require("path")
-  , Runner = require("tap/lib/tap-runner")
-  , Consumer = require("tap/lib/tap-consumer")
+  , tap = require("tap")
+  , Runner = tap.Runner
+  , Consumer = tap.Consumer
 
   , nopt = require("nopt")
 
