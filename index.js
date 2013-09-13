@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 const CHECKMARK = "\u2713";
 const OK_FINISH_REGEXP = /^ok$/;
 const FAIL_FINISH_REGEXP = /^fail[0-9\s]+$/;
