@@ -18,8 +18,7 @@ fs.readdirSync(samplesDir).forEach(function(filename) {
     var abspath = path.join(samplesDir, filename);
     var code = fs.readFileSync(abspath, "utf8");
     var shellCmd = code.match(/^    \$ (.+)$/m)[1] +
-                   ' | node test/bin/strip-colors.js' +
-                   ' | node test/bin/remove-tracebacks.js';
+                   ' | node test/bin/simplify-output.js';
     var expect = dedent(code.match(/^  Should output:((.|\n)+)\*\//m)[1], 4);
 
     exec(shellCmd, {
