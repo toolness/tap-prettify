@@ -11,6 +11,7 @@ const CURRENT_TEST_START = {
 };
 
 var colors = require("colors");
+var tap = require("tap");
 
 function copy(obj) {
   return JSON.parse(JSON.stringify(obj));
@@ -120,5 +121,9 @@ function prettifyTapOutput(options) {
   });
 }
 
-module.exports = prettifyTapOutput;
+module.exports = Object.create(tap);
+
+module.exports.prettify = prettifyTapOutput;
+
+// Exported for unit testing purposes only.
 module.exports._isUsefulLine = isUsefulLine;

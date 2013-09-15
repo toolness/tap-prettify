@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var argv = process.argv.slice(2)
-  , prettifyTapOutput = require("../")
+  , prettifyTapOutput = require("../").prettify
   , path = require("path")
   , tap = require("tap")
   , Runner = tap.Runner

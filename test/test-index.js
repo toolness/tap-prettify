@@ -1,4 +1,5 @@
-var test = require('tap').test;
+var tap = require('tap');
+var test = tap.test;
 
 var tapPrettify = require('../');
 
@@ -9,5 +10,14 @@ test("isUsefulLine() works", function(t) {
   t.notOk(isUsefulLine("hello there", ["hi", "bye"]));
   t.notOk(isUsefulLine("hello there", []));
 
+  t.end();
+});
+
+test("exports of 'tap' are available", function(t) {
+  ['Producer', 'Consumer', 'Test', 'Harness', 'Runner',
+   'test', 'assert'].forEach(function(name) {
+    t.ok(tapPrettify[name] && tapPrettify[name] === tap[name],
+         "tap." + name + " is exported");
+  });
   t.end();
 });

@@ -29,5 +29,8 @@ Options:
 
 See the [tap README][] for more guidance on how to use tap to write tests.
 
+Finally, the `tap-prettify` module inherits everything from the `tap`
+module, so you can use it as a substitute if needed.
+
   [tap]: https://github.com/isaacs/node-tap
   [tap README]: https://github.com/isaacs/node-tap#readme
