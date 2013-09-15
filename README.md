@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/toolness/tap-prettify.png?branch=master)](http://travis-ci.org/toolness/tap-prettify)
+
 This makes node [Test Anything Protocol][tap] test runner output
 nicely readable, like so:
 
