@@ -121,3 +121,4 @@ function prettifyTapOutput(options) {
 }
 
 module.exports = prettifyTapOutput;
+module.exports._isUsefulLine = isUsefulLine;
